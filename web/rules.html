@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>规则速览 · 克苏鲁的呼唤</title>
+<meta name="description" content="COC 第七版核心规则速览：d100 检定、成功等级对照、角色属性与常用技能。">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+	<div class="wrap">
+		<a class="brand" href="../index.html">克苏鲁的呼唤<span>CALL OF CTHULHU</span></a>
+		<div class="mainnav">
+			<a href="../index.html">首 页</a>
+			<a class="on" href="rules.html">规则速览</a>
+			<a href="character.html">角色卡</a>
+			<a href="story.html">模组与战报</a>
+			<a href="table.html">开团指南</a>
+			<a href="log.html">示例战报</a>
+		</div>
+	</div>
+</div>
+
+<div class="wrap">
+<div class="sheet">
+	<div class="section">
+
+		<h1>规则速览</h1>
+		<p class="subtitle">HOW TO ROLL</p>
+
+		<p>很多人以为跑团要背一本几百页的规则书。其实规则只是脚手架，真正重要的只有一件事：<strong>在规则下，玩家和主持人共同创造出一个小说般精彩又有趣的故事。</strong>剩下的条款，都是为了让这件事顺畅地发生。</p>
+
+		<div class="note">
+			<p><strong>先说清楚：本页只做最简单的介绍。</strong>真正的规则在《克苏鲁的呼唤》第七版规则书（COC 7th）里——完整的技能列表、战斗流程、理智与疯狂、法术与神话生物，都在那本书上。这里只是帮你先弄明白「跑团大概是怎么回事」，<strong>不能代替规则书</strong>。想认真跑团，请务必去读原书。</p>
+		</div>
+
+		<hr class="rule-line">
+
+		<h2>一、一枚骰子，决定一切</h2>
+
+		<div class="figure float-right">
+			<img src="../image/dice.png" width="300" height="300" alt="桌面骰子：二十面骰与六面骰">
+			<p class="figcap">桌上最常见的两种骰子：d20 与 d6</p>
+		</div>
+
+		<p>COC 使用 <strong>d100</strong>——也就是两个十面骰，一个当十位、一个当个位，合起来能得到 01 到 100 的任意一个数（00 加 0 读作 100）。</p>
+
+		<p>当你想做一件「有可能失败」的事，KP 会让你做一次<strong>技能检定</strong>：掷 d100，把结果和你这项技能的数值比一比。数值越小越好——<strong>掷出的数字小于或等于技能值，就算成功</strong>。</p>
+
+		<p>举个具体的例子：你的「侦查」是 65。KP 说「你蹲下来检查书桌底下」，你掷出 43，43 ≤ 65，成功，你发现了粘在桌板背面的那把钥匙。如果掷出 78，那就是失败——你什么都没找到，而时间又过去了十分钟。</p>
+
+		<h2>二、成功也分三六九等</h2>
+
+		<p>同一个技能值，掷出的数字越漂亮，结果越漂亮。COC 把成功分成若干等级，规则表如下：</p>
+
+		<table>
+			<caption>表 1　技能检定结果对照（以技能值 65 为例）</caption>
+			<thead>
+				<tr>
+					<th style="width:24%;">结果</th>
+					<th style="width:26%;">判定条件</th>
+					<th style="width:16%;">掷出范围</th>
+					<th>含义</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>大成功</td>
+					<td class="num">掷出 01</td>
+					<td class="num">01</td>
+					<td>超乎预期地漂亮，KP 通常会额外给你一点好处。</td>
+				</tr>
+				<tr>
+					<td>极难成功</td>
+					<td class="num">≤ 技能值 ÷ 5</td>
+					<td class="num">01 – 13</td>
+					<td>专业水准，做得干净利落。</td>
+				</tr>
+				<tr>
+					<td>困难成功</td>
+					<td class="num">≤ 技能值 ÷ 2</td>
+					<td class="num">01 – 32</td>
+					<td>比普通人做得好，信息更完整。</td>
+				</tr>
+				<tr>
+					<td>常规成功</td>
+					<td class="num">≤ 技能值</td>
+					<td class="num">01 – 65</td>
+					<td>做到了你想做的事。</td>
+				</tr>
+				<tr>
+					<td>失败</td>
+					<td class="num">&gt; 技能值</td>
+					<td class="num">66 – 100</td>
+					<td>没做到。故事继续，但代价来了。</td>
+				</tr>
+				<tr>
+					<td>大失败</td>
+					<td class="num">96 – 100（技能值 &lt; 50 时）</td>
+					<td class="num">96 – 100</td>
+					<td>不只是失败，还出了岔子：枪卡壳、线索被毁、惊动了不该惊动的人。</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="note">
+			<p><strong>别怕失败。</strong>新手最容易犯的错，是把「失败」当成游戏结束。恰恰相反：检定失败往往才是故事真正开始的地方——你撬锁时弄断了工具、你问话时惊动了对方，KP 由此把剧情推向一个谁都没预料到的方向。</p>
+		</div>
+
+		<h2>三、角色身上有什么</h2>
+
+		<p>角色卡上最先填的是一组基础属性。它们决定了这个人的底子，也间接决定了各种技能的起始值。</p>
+
+		<table>
+			<caption>表 2　八项基础属性</caption>
+			<thead>
+				<tr>
+					<th style="width:22%;">属性</th>
+					<th style="width:14%;">英文</th>
+					<th style="width:14%;">常见范围</th>
+					<th>它管什么</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>力量</td><td>STR</td><td class="num">30 – 90</td><td>搬、推、拽、砸。肉搏伤害也看它。</td></tr>
+				<tr><td>体质</td><td>CON</td><td class="num">30 – 90</td><td>扛得住吗。中毒、溺水、熬夜，都归它。</td></tr>
+				<tr><td>体型</td><td>SIZ</td><td class="num">30 – 90</td><td>身高体重。影响体力上限，也影响你躲不躲得开。</td></tr>
+				<tr><td>敏捷</td><td>DEX</td><td class="num">30 – 90</td><td>谁先动。逃跑、闪避、悄悄走路。</td></tr>
+				<tr><td>外貌</td><td>APP</td><td class="num">30 – 90</td><td>第一印象。说服、套话、被记住的概率。</td></tr>
+				<tr><td>智力</td><td>INT</td><td class="num">30 – 90</td><td>想得起来吗。灵感、推理、临时应变。</td></tr>
+				<tr><td>意志</td><td>POW</td><td class="num">30 – 90</td><td>精神强度。面对难以理解之物时，撑不撑得住。</td></tr>
+				<tr><td>教育</td><td>EDU</td><td class="num">30 – 90</td><td>读过多少书。决定技能点的多少，也决定你「知道」什么。</td></tr>
+			</tbody>
+		</table>
+
+		<p class="noindent">属性一般由掷骰生成（3d6 再乘 5），也可以和 KP 商量着直接定一个符合人物设定的数。表中 30 – 90 是多数角色的常见区间，偶尔掷出 15 或 90 这样的极端值也很正常。没有「最优解」——一个力量 40、教育 80 的瘦弱学者，往往比一个全属性均衡的人更有意思。</p>
+
+		<h2>四、技能是「你练过的事」</h2>
+
+		<p>属性是天生的，技能是后天学的。创建角色时，你会有一定数量的技能点可以分配，把它们撒在符合你职业和经历的项目上。</p>
+
+		<ul>
+			<li><strong>侦查</strong>——翻找、观察、注意到不该在的东西。调查员最常用的一项。</li>
+			<li><strong>图书馆使用</strong>——在旧报纸和档案里挖出线索。COC 的灵魂技能。</li>
+			<li><strong>心理学</strong>——判断对方有没有在撒谎、是不是在害怕。</li>
+			<li><strong>话术 / 说服 / 魅惑</strong>——三张嘴，三种风格，看你想怎么让人点头。</li>
+			<li><strong>闪避</strong>——打不过的时候，至少跑得掉。</li>
+			<li><strong>母语</strong>——读得懂文献，也写得出一封像样的信。</li>
+		</ul>
+
+		<p>技能值通常写在 1 到 99 之间。50 左右是「受过训练的普通人」，70 以上是「这行的专家」，90 以上基本可以算传奇了。</p>
+
+		<hr class="rule-line">
+
+		<div class="note">
+			<p><strong>下一页：</strong>有了规则，还得有个人物。去<a href="character.html">角色卡</a>看一张完整的示例。</p>
+		</div>
+
+		<p class="noindent" style="text-align:right;"><a href="../index.html">← 返回首页</a></p>
+
+	</div>
+</div>
+</div>
+
+<div class="sitefoot">
+	<div class="wrap">
+		克苏鲁的呼唤 · 跑团入门手册<br>
+		夏智<span class="sep">|</span>学号 U202614958<span class="sep">|</span>2602 班<br>
+		<span style="font-size:12px; color:#5f5238;">本页为《新生实践课》网页设计作业，内容为个人整理与原创示例。</span>
+	</div>
+</div>
+
+</body>
+</html>

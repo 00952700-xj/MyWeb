@@ -1,0 +1,308 @@
+﻿@charset "utf-8";
+/* ============================================================
+   《克苏鲁的呼唤 · 跑团入门手册》 全站样式表
+   作者：夏智   U202614958   2602 班
+   说明：所有页面共用本文件，图片统一放在 ../image/ 目录
+   ============================================================ */
+
+/* ---------- 基础 ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+	background-color: #14110f;
+	background-image: radial-gradient(circle at 50% 0%, #221d18 0%, #14110f 60%);
+	color: #3a2f22;
+	font-family: "STSong", "华文宋体", "SimSun", "宋体", serif;
+	font-size: 16px;
+	line-height: 1.9;
+}
+
+a { color: #7a1f1f; text-decoration: none; }
+a:hover { color: #a8873f; text-decoration: underline; }
+
+.wrap { width: 1000px; max-width: 100%; margin: 0 auto; }
+
+/* ---------- 顶部标题栏 ---------- */
+.topbar {
+	background-color: #17130f;
+	border-bottom: 2px solid #7d6538;
+	padding: 14px 0;
+}
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; }
+
+.brand {
+	font-family: "STZhongsong", "华文中宋", "SimSun", serif;
+	font-size: 21px;
+	color: #e8dcc0 !important;
+	letter-spacing: 3px;
+	text-decoration: none !important;
+}
+.brand span {
+	display: block;
+	font-family: "SimSun", serif;
+	font-size: 11px;
+	color: #8d7a54;
+	letter-spacing: 5px;
+	margin-top: 2px;
+}
+
+.mainnav a {
+	color: #c3ae7e;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-left: 26px;
+	padding-bottom: 4px;
+	border-bottom: 2px solid transparent;
+	text-decoration: none;
+}
+.mainnav a:hover { color: #efe6d2; border-bottom-color: #a8873f; text-decoration: none; }
+.mainnav a.on { color: #efe6d2; border-bottom-color: #a8873f; }
+
+/* ---------- 纸张主体 ---------- */
+.sheet {
+	background-color: #efe6d2;
+	background-image: url(../image/parchment.jpg);
+	background-repeat: repeat;
+	border-top: 5px double #7a1f1f;
+	box-shadow: 0 18px 40px rgba(0, 0, 0, .55);
+	overflow: hidden;
+}
+
+.section { padding: 38px 52px; }
+
+/* 主页横幅：随容器缩放，热区坐标同步缩放 */
+img.hero { display: block; width: 100%; height: auto; border: 0; }
+
+/* ---------- 标题与正文 ---------- */
+h1 {
+	font-family: "STZhongsong", "华文中宋", "SimSun", serif;
+	font-size: 34px;
+	font-weight: normal;
+	color: #241c14;
+	letter-spacing: 4px;
+	line-height: 1.5;
+}
+h2 {
+	font-family: "STZhongsong", "华文中宋", "SimSun", serif;
+	font-size: 22px;
+	font-weight: normal;
+	color: #3a1a12;
+	letter-spacing: 2px;
+	border-left: 5px solid #7a1f1f;
+	padding-left: 13px;
+	margin: 34px 0 14px;
+	line-height: 1.5;
+}
+h3 { font-size: 17px; color: #4a3a26; letter-spacing: 1px; margin: 20px 0 8px; }
+
+p { margin: 12px 0; text-indent: 2em; text-align: justify; }
+p.noindent { text-indent: 0; }
+
+.subtitle {
+	font-size: 14px;
+	color: #7d6538;
+	letter-spacing: 6px;
+	text-indent: 0;
+	margin: 8px 0 26px;
+}
+.rule-line {
+	height: 1px;
+	background: linear-gradient(to right, transparent, #a8873f, transparent);
+	border: 0;
+	margin: 26px 0;
+}
+
+ul, ol { margin: 12px 0 12px 2.2em; }
+li { margin: 7px 0; line-height: 1.85; }
+li strong { color: #5a1a12; }
+
+/* ---------- 引文 ---------- */
+blockquote {
+	font-family: "KaiTi", "楷体", "STKaiti", serif;
+	font-size: 17px;
+	color: #4a3423;
+	background-color: rgba(168, 135, 63, .10);
+	border-left: 3px solid #a8873f;
+	padding: 14px 20px;
+	margin: 20px 0;
+	text-indent: 0;
+}
+
+/* ---------- 表格 ---------- */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 18px 0 22px;
+	background-color: rgba(255, 255, 255, .38);
+}
+caption {
+	caption-side: top;
+	text-align: left;
+	font-size: 13px;
+	color: #7d6538;
+	letter-spacing: 1px;
+	padding-bottom: 8px;
+}
+th {
+	background-color: #2b241a;
+	color: #e8dcc0;
+	font-weight: normal;
+	letter-spacing: 2px;
+	font-size: 15px;
+	padding: 11px 10px;
+	text-align: left;
+	border: 1px solid #2b241a;
+}
+td {
+	padding: 9px 10px;
+	border: 1px solid #cdbc95;
+	font-size: 15px;
+	line-height: 1.7;
+}
+tbody tr:nth-child(even) { background-color: rgba(122, 31, 31, .055); }
+td.num { text-align: center; letter-spacing: 1px; }
+
+/* ---------- 图片与图注 ---------- */
+.figure { text-align: center; margin: 22px auto; }
+.figure img {
+	max-width: 100%;
+	border: 1px solid #c9b98f;
+	padding: 7px;
+	background-color: #fff;
+}
+.figure.float-right { float: right; width: 300px; margin: 6px 0 16px 28px; }
+.figcap { font-size: 13px; color: #6b5c46; letter-spacing: 1px; margin-top: 8px; text-indent: 0; }
+
+/* ---------- 首页卡片 ---------- */
+.cards { display: flex; flex-wrap: wrap; gap: 18px; margin: 22px 0 6px; }
+.card {
+	flex: 1 1 200px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, .34);
+	border: 1px solid #c9b98f;
+	padding: 20px 18px;
+	text-decoration: none;
+	transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 18px rgba(60, 40, 20, .18);
+	border-color: #a8873f;
+	text-decoration: none;
+}
+.card h3 {
+	margin: 0 0 6px;
+	font-family: "STZhongsong", "华文中宋", serif;
+	font-size: 19px;
+	color: #5a1a12;
+	letter-spacing: 2px;
+}
+.card p { flex: 1; font-size: 14px; color: #5c4a33; text-indent: 0; margin: 0; line-height: 1.75; }
+.card em { display: block; font-style: normal; font-size: 11px; letter-spacing: 3px; color: #8d7a54; margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(168, 135, 63, .35); }
+
+/* ---------- 提示框 ---------- */
+.note {
+	border: 1px dashed #a8873f;
+	background-color: rgba(168, 135, 63, .09);
+	padding: 16px 20px;
+	margin: 22px 0;
+	font-size: 15px;
+}
+.note strong { color: #5a1a12; }
+.note p { text-indent: 0; margin: 6px 0; }
+
+/* ---------- 页脚 ---------- */
+.sitefoot {
+	background-color: #17130f;
+	color: #8d7a54;
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 1px;
+	padding: 20px 12px 26px;
+	line-height: 2;
+}
+.sitefoot a { color: #b09a6a; }
+.sitefoot .sep { margin: 0 8px; color: #4a3f2c; }
+
+/* ---------- 战报页 ---------- */
+.metatable th { width: 118px; white-space: nowrap; font-size: 14px; letter-spacing: 3px; }
+.metatable td { font-size: 15px; }
+
+.log {
+	margin: 16px 0 8px;
+	border-top: 1px solid rgba(140, 114, 66, .35);
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 78px 1fr;
+	column-gap: 18px;
+	padding: 8px 0;
+	border-bottom: 1px solid rgba(140, 114, 66, .16);
+}
+.row .who {
+	text-align: right;
+	font-family: "STZhongsong", "华文中宋", "SimSun", serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1.9;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.row .txt { font-size: 15px; line-height: 1.85; color: #3a2f22; word-break: break-word; }
+
+.row.ooc .txt { color: #836c48; font-size: 13.5px; }
+
+.row.dice .txt {
+	justify-self: start;
+	color: #6b3a2a;
+	font-size: 14px;
+	background-color: rgba(168, 135, 63, .10);
+	border-left: 3px solid rgba(168, 135, 63, .55);
+	padding: 5px 12px;
+}
+
+p.narr { text-indent: 2em; font-size: 15px; color: #4a3a26; margin: 12px 0; }
+p.ending {
+	text-align: center;
+	font-family: "STZhongsong", "华文中宋", "SimSun", serif;
+	font-size: 18px;
+	letter-spacing: 6px;
+	color: #7a1f1f;
+	margin: 30px 0;
+}
+p.lognote {
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #7d6538;
+	margin: 26px 0;
+	padding: 10px 0;
+	border-top: 1px dashed rgba(140, 114, 66, .45);
+	border-bottom: 1px dashed rgba(140, 114, 66, .45);
+}
+p.small { font-size: 14px; color: #5c4a33; }
+
+code {
+	font-family: Consolas, "Courier New", monospace;
+	font-size: 13px;
+	background-color: rgba(168, 135, 63, .14);
+	padding: 1px 5px;
+}
+
+/* ---------- 自适应 ---------- */
+@media screen and (max-width: 1040px) {
+	.wrap { width: 100%; padding: 0 12px; }
+	.section { padding: 24px 20px; }
+	.figure.float-right { float: none; width: auto; margin: 18px auto; }
+	.row { grid-template-columns: 64px 1fr; column-gap: 10px; }
+	.row .who { font-size: 12.5px; white-space: normal; overflow: visible; }
+	.metatable th { width: 84px; letter-spacing: 1px; }
+	h1 { font-size: 26px; letter-spacing: 2px; }
+	h2 { font-size: 19px; }
+	.topbar .wrap { flex-direction: column; align-items: flex-start; }
+	.mainnav { margin-top: 8px; }
+	.mainnav a { margin: 0 16px 0 0; display: inline-block; }
+}
